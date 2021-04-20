@@ -1,0 +1,119 @@
+$blackColor: #252525;
+$whiteColor: #ffffff;
+$font-size12: 12px;
+$font-size14: 14px;
+$size20: 20px;
+
+
+.Card {
+    width: 780px;
+    border-bottom: 1px solid $blackColor;
+    border-top: 1px solid $blackColor;
+    color: $blackColor;
+}
+
+.Card-header {
+    padding-top: 17px;
+    padding-bottom: $size20;
+    padding-right: $size20;
+    font-weight: bold;
+    display: inline-block;
+
+    .CardHeader-title {
+        font-size: $size20;
+        display: inline;
+    }
+
+    .CardHeader-details {
+        font-size: $font-size12;
+    }  
+}
+
+.Card-actions {
+    float: right;
+    padding-top: 15px;
+
+    .seperator {
+        display:inline;
+        border: 1px solid #767676;
+    }
+
+    .Card-icons {
+        font-size: 18px;
+        color: $blackColor;
+        margin-right: $size20;
+        margin-left: $size20;
+    }
+}
+
+button {
+    padding-left: $size20;
+    padding-right: $size20;
+    font-size: $font-size14;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.tertiary {
+    color: $blackColor;
+    border: 1px solid $blackColor;
+    background-color: $whiteColor;
+}
+  
+.secondary {
+    color: $whiteColor;
+    background-color: #4D6474;
+}
+
+.Card-section {
+    font-size: $font-size12;
+    margin-right: 25px;
+    padding-bottom: 18px;
+    display: inline-block;
+
+    .seperator {
+        display:inline-block;
+        height: 35px;
+        width: 0px;
+        border: 1px solid #767676;
+        margin-bottom: 0px;
+    }
+
+    .Card-details {
+      display: inline-block;
+      padding-right: 25px;
+      padding-left: 10px;
+      font-size: $font-size12;
+    }
+}
+
+@mixin CardDetails($color) {
+    margin: 0px;
+    color: $color;
+}
+.CardDetails-header {
+    @include CardDetails(#767676);
+}
+.CardDetails-detail {
+     @include CardDetails(#252525);
+     padding-top: 8px; 
+}
+
+  
+.paddingLeft6{
+    padding-left: 6px
+}
+  
+
+.Card-fulldetails {
+    display: inline;
+    a {
+        float: right;
+        padding-bottom: 18px;
+        font-size: $font-size12;
+        color: $blackColor;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: $size20;
+    }
+}
